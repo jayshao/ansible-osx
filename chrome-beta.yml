@@ -2,9 +2,6 @@
 - hosts: workstation
 
   tasks:
-    - name: install chrome beta
-      mac_pkg: pkg_type=app
-               url=https://dl.google.com/chrome/mac/beta/GoogleChrome.dmg
-               archive_type=dmg archive_path='Google Chrome.app'
+    - name: install chrome
+      homebrew_cask: name=chrome state=present
       sudo: yes
-
