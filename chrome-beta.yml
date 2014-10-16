@@ -3,5 +3,5 @@
 
   tasks:
     - name: install chrome
-      homebrew_cask: name=chrome state=present
+      homebrew_cask: name=google-chrome-beta state=present
       sudo: yes
