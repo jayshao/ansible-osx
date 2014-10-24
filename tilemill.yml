@@ -3,7 +3,4 @@
 
   tasks:
     - name: install tilemill
-      mac_pkg: pkg_type=app
-               url=http://tilemill.s3.amazonaws.com/latest/TileMill-0.10.1.zip
-               archive_type=zip archive_path="TileMill.app"
-      sudo: yes
+      homebrew_cask: name=tilemill state=present

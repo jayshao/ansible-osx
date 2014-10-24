@@ -4,4 +4,3 @@
   tasks:
     - name: install spotify
       homebrew_cask: name=spotify state=present
-      sudo: yes
